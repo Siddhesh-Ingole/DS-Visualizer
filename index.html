@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DS Visualizer — Interactive Data Structure Learning Platform</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body class="theme-dark">
+
+<!-- Loading Screen -->
+<div id="loader" class="loader">
+  <div class="loader-diagram">
+    <span class="lnode" style="--i:0">A</span>
+    <span class="lnode" style="--i:1">R</span>
+    <span class="lnode" style="--i:2">R</span>
+    <span class="lnode" style="--i:3">A</span>
+    <span class="lnode" style="--i:4">Y</span>
+  </div>
+  <p>Building the structure…</p>
+</div>
+
+<!-- Top Navigation -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <button class="hamburger" id="hamburger" aria-label="Toggle navigation">
+      <span></span><span></span><span></span>
+    </button>
+    <a href="#home" class="brand" data-nav="home">
+      <span class="brand-mark">◧</span> DS Visualizer
+    </a>
+
+    <div class="search-wrap">
+      <input id="searchInput" type="text" placeholder="Search a structure or topic…" autocomplete="off">
+      <div id="searchResults" class="search-results"></div>
+    </div>
+
+    <div class="topbar-actions">
+      <button id="themeToggle" class="icon-btn" aria-label="Toggle theme" title="Toggle dark / light mode">🌙</button>
+      <div class="progress-chip" id="progressChip" title="Topics explored">
+        <span id="progressCount">0</span>/<span id="progressTotal">11</span>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Sidebar -->
+<nav class="sidebar" id="sidebar">
+  <div class="sidebar-section-label">Overview</div>
+  <a href="#home" class="nav-link" data-nav="home"><span class="nav-dot"></span>Home</a>
+  <a href="#roadmap" class="nav-link" data-nav="roadmap"><span class="nav-dot"></span>Roadmap</a>
+
+  <div class="sidebar-section-label">Linear Structures</div>
+  <a href="#array" class="nav-link" data-nav="array" data-ds="array"><span class="nav-dot"></span>Array</a>
+  <a href="#linkedlist" class="nav-link" data-nav="linkedlist" data-ds="linkedlist"><span class="nav-dot"></span>Linked List</a>
+  <a href="#stack" class="nav-link" data-nav="stack" data-ds="stack"><span class="nav-dot"></span>Stack</a>
+  <a href="#queue" class="nav-link" data-nav="queue" data-ds="queue"><span class="nav-dot"></span>Queue</a>
+  <a href="#circularqueue" class="nav-link" data-nav="circularqueue" data-ds="circularqueue"><span class="nav-dot"></span>Circular Queue</a>
+  <a href="#deque" class="nav-link" data-nav="deque" data-ds="deque"><span class="nav-dot"></span>Deque</a>
+  <a href="#priorityqueue" class="nav-link" data-nav="priorityqueue" data-ds="priorityqueue"><span class="nav-dot"></span>Priority Queue</a>
+
+  <div class="sidebar-section-label">Hierarchical &amp; Graph</div>
+  <a href="#tree" class="nav-link" data-nav="tree" data-ds="tree"><span class="nav-dot"></span>Binary Tree &amp; BST</a>
+  <a href="#heap" class="nav-link" data-nav="heap" data-ds="heap"><span class="nav-dot"></span>Heap</a>
+  <a href="#graph" class="nav-link" data-nav="graph" data-ds="graph"><span class="nav-dot"></span>Graph</a>
+  <a href="#hashtable" class="nav-link" data-nav="hashtable" data-ds="hashtable"><span class="nav-dot"></span>Hash Table</a>
+</nav>
+<div class="sidebar-scrim" id="sidebarScrim"></div>
+
+<main id="app">
+
+  <!-- ================= HOME ================= -->
+  <section class="page active" id="home">
+    <section class="hero">
+      <div class="hero-bg" id="heroBg"></div>
+      <div class="hero-content">
+        <div class="eyebrow">Learn by watching it happen</div>
+        <h1>Data structures,<br><span class="grad-text">made visible.</span></h1>
+        <p class="hero-sub">Twelve structures. Every operation animated, step by step, in real time — so you stop memorizing definitions and start seeing how the machine actually thinks.</p>
+        <div class="hero-actions">
+          <a href="#array" class="btn btn-primary" data-nav="array" data-ds="array">Start with Arrays →</a>
+          <a href="#roadmap" class="btn btn-ghost" data-nav="roadmap">View the roadmap</a>
+        </div>
+      </div>
+      <div class="hero-visual" id="heroVisual" aria-hidden="true"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <span class="eyebrow">Why it works</span>
+        <h2>Reading about a stack won't teach you how it fails.<br>Pushing past capacity will.</h2>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon">▦</div>
+          <h3>Real animation, not slideshows</h3>
+          <p>Every insert, delete, rotate and rebalance plays out as a live, frame-by-frame motion — the same one running under the hood in memory.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">⌁</div>
+          <h3>Complexity, attached to action</h3>
+          <p>Trigger an operation and its Big-O cost appears next to it immediately — best, average, worst case, and space, tied to what you just did.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">◍</div>
+          <h3>Practice that sticks</h3>
+          <p>Quizzes, interview questions and coding challenges sit right below the visualizer, so testing yourself is one scroll away, not a separate app.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon">↻</div>
+          <h3>Your pace, your controls</h3>
+          <p>Step forward, step backward, slow it down, speed it up, or randomize the data — the visualizer waits for you, never the other way around.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-block" id="roadmap">
+      <div class="section-head">
+        <span class="eyebrow">Suggested order</span>
+        <h2>A roadmap, not a table of contents</h2>
+        <p class="section-sub">Structures are ordered by how much they depend on the ones before. Follow it top to bottom, or jump straight to what you need.</p>
+      </div>
+      <div class="roadmap" id="roadmapList"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-head">
+        <span class="eyebrow">Today</span>
+        <h2>Daily Challenge</h2>
+      </div>
+      <div class="daily-card" id="dailyCard">
+        <div class="daily-meta">
+          <span class="daily-tag" id="dailyTag">Stack</span>
+          <span class="daily-date" id="dailyDate"></span>
+        </div>
+        <p class="daily-q" id="dailyQ">Loading today's question…</p>
+        <button class="btn btn-primary btn-sm" id="dailyReveal">Reveal answer</button>
+        <p class="daily-a" id="dailyA" hidden></p>
+      </div>
+    </section>
+
+    <footer class="site-footer" id="contact">
+      <div class="footer-grid">
+        <div>
+          <div class="brand"><span class="brand-mark">◧</span> DS Visualizer</div>
+          <p>An interactive companion for learning data structures — built for students, by people who forgot too many Big-O tables to count.</p>
+        </div>
+        <div>
+          <h4>Structures</h4>
+          <a href="#array" data-nav="array" data-ds="array">Array</a>
+          <a href="#stack" data-nav="stack" data-ds="stack">Stack</a>
+          <a href="#graph" data-nav="graph" data-ds="graph">Graph</a>
+          <a href="#hashtable" data-nav="hashtable" data-ds="hashtable">Hash Table</a>
+        </div>
+        <div>
+          <h4>Contact</h4>
+          <p>Questions, bug reports, or ideas for new visualizations — reach out any time.</p>
+          <a href="mailto:hello@dsvisualizer.app">hello@dsvisualizer.app</a>
+        </div>
+      </div>
+      <div class="footer-bottom">© 2026 DS Visualizer. Built for learning, not production.</div>
+    </footer>
+  </section>
+
+  <!-- Data-structure page template container; individual pages injected by script.js -->
+  <div id="dsPages"></div>
+
+</main>
+
+<button class="scroll-top" id="scrollTop" aria-label="Scroll to top">↑</button>
+
+<script src="script.js"></script>
+</body>
+</html>
