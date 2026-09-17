@@ -50,17 +50,6 @@ Instead of simply reading theory, users can perform operations and watch how eac
 ---
 
 
-## "C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224853.png" Screenshot
-
-"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224636.png"
-"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224925.png"
-"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224715.png"
-"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224734.png"
-"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224853.png"
-
----
-
-
 ## ⚙️ Features
 
 - 🖱️ Interactive Operations
@@ -90,11 +79,11 @@ Instead of simply reading theory, users can perform operations and watch how eac
 
 ## 📷💻 Project Screenshots
 
-> *("C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224636.png"
+"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224636.png"
 "C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224925.png"
 "C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224715.png"
 "C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224734.png"
-"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224853.png")*
+"C:\Users\Sidhesh\Pictures\Screenshots\Screenshot 2026-07-30 224853.png"
 
 ---
 
