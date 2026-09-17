@@ -314,7 +314,8 @@ main#app { margin-left: var(--sidebar-w); padding-top: var(--topbar-h); min-heig
 .footer-grid a { display: block; color: var(--muted); font-size: 14px; margin-bottom: 8px; }
 .footer-grid a:hover { color: var(--accent); }
 .footer-grid p { color: var(--muted); font-size: 14px; margin-top: 10px; }
-.footer-bottom { max-width: 1400px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 13px; }
+.footer-bottom { max-width: 1400px; margin: 40px auto 0; padding-top: 20px; border-top: 1px solid var(--border); color: var(--muted-2); font-size: 13px; line-height: 1.7; }
+.footer-bottom strong { color: var(--muted); font-weight: 600; }
 
 /* ---------- DS Page template ---------- */
 .ds-header { padding: 48px 48px 20px; max-width: 1400px; margin: 0 auto; }
