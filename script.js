@@ -1,5 +1,5 @@
 /* ============================================================
-   DS VISUALIZER — APPLICATION LOGIC
+   DS VISUALIZER — APPLICATION LOGIC '-'
    Vanilla JS. No frameworks, no dependencies.
    ============================================================ */
 
