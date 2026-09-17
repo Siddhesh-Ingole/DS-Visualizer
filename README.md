@@ -79,19 +79,11 @@ Instead of simply reading theory, users can perform operations and watch how eac
 
 ## 📷💻 Project Screenshots
 
-<p align="center">
-  <img src="screenshots/1.png" width="45%">
-  <img src="screenshots/2.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="screenshots/3.png" width="45%">
-  <img src="screenshots/4.png" width="45%">
-</p>
-
-<p align="center">
-  <img src="screenshots/5.png" width="45%">
-</p>
+<img width="1898" height="907" alt="Screenshot 2026-07-30 224925" src="https://github.com/user-attachments/assets/cca09947-3ba4-4ea8-80bc-1e75d7905f3b" />
+<img width="1898" height="908" alt="Screenshot 2026-07-30 224636" src="https://github.com/user-attachments/assets/5c8fa73b-c8e2-46a0-9ce1-547a5b38de7e" />
+<img width="1903" height="907" alt="Screenshot 2026-07-30 224853" src="https://github.com/user-attachments/assets/9a3da00c-f4c5-4626-9e88-f50d1f3db356" />
+<img width="1903" height="908" alt="Screenshot 2026-07-30 224734" src="https://github.com/user-attachments/assets/5547860d-92a6-4049-b697-f4d8443fa44e" />
+<img width="1898" height="906" alt="Screenshot 2026-07-30 224715" src="https://github.com/user-attachments/assets/666be1a0-c6fb-4f96-9850-8fb1bc2cad43" />
 
 ---
 
